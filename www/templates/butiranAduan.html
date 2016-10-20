@@ -1,0 +1,23 @@
+<ion-view title="Butiran Aduan" id="page3">
+    <ion-content padding="true" class="has-header">
+    <div class="list card" id="butiranAduan-card21">
+            <ion-item id="butiranAduan-list-item4">{{aduan.tajuk}}</ion-item>
+            <div class=" item item-image">
+                <img src="data:image/jpeg;base64,{{aduan.gambar}}" width="100%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
+            </div>
+            <div class="item item-body" id="butiranAduan-list-item-container2">
+                <div id="butiranAduan-markdown2" style="color:#000000;">
+                    <p style="margin-top:0px;">Dihantar oleh
+                        <strong>{{aduan.pengadu}}</strong>
+                    </p>
+                </div>
+            </div>
+            <div class="spacer" style="width: 300px; height: 15px;"></div>
+            <ion-item class="item-divider" id="butiranAduan-list-item-divider1">Peta Kawasan</ion-item>
+            <div style="margin: 0px; line-height: 250px; background-color: rgb(232, 235, 239); text-align: center;">
+                <div id="map"></div>
+            </div>
+        </div>
+        
+    </ion-content>
+</ion-view>

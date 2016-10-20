@@ -1,0 +1,17 @@
+<ion-view title="Senarai Aduan" id="page1">
+    <ion-nav-buttons side="right" class="has-header">
+        <button ng-click="aduanBaru()" class="button icon ion-android-create"></button>
+    </ion-nav-buttons>
+    <ion-content padding="true" class="has-header">
+        <ion-list id="senaraiAduan-list1" class="manual-list-fullwidth" 
+        ng-repeat="item in aduan track by item.id">
+            <ion-item class="item-thumbnail-left item-icon-right" id="senaraiAduan-list-item1" ui-sref="butiranAduan({id:item.id})">
+                <img src="data:image/jpeg;base64,{{item.gambar}}">
+                <h2>{{item.tajuk}}</h2>
+                <p>{{item.pengadu}}</p>
+                <i class="icon ion-ios-arrow-forward"></i>
+            </ion-item>
+        </ion-list>
+        <a ui-sref="aduanBaru" id="senaraiAduan-button1" class="button button-positive  button-block">Aduan Baru</a>
+    </ion-content>
+</ion-view>

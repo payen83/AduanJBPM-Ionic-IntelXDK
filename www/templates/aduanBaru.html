@@ -1,0 +1,27 @@
+<ion-view title="Aduan Baru" id="page2">
+    <ion-content padding="true" class="has-header">
+        <form id="aduanBaru-form1" class="list">
+            <label class="item item-input" id="aduanBaru-input1">
+                <span class="input-label">Pengadu</span>
+                <input ng-model="$parent.pengadu" type="text" placeholder="Nama anda">
+            </label>
+            <label class="item item-input" id="aduanBaru-input2">
+                <span class="input-label">Aduan</span>
+                <input ng-model="$parent.tajuk" type="text" placeholder="Sila masukkan aduan">
+            </label>
+            <label class="item item-input" id="aduanBaru-input3">
+                <span class="input-label">Koordinat</span>
+                <input ng-model="$parent.latlong" type="text" placeholder="">
+            </label>
+        </form>
+        <div id="aduanBaru-button-bar1" class="button-bar">
+            <button ng-click="btnCamera()" id="aduanBaru-button5" class="button button-balanced  button-block icon-left ion-ios-camera">Kamera</button>
+            <button ng-click="btnGaleri()" id="aduanBaru-button6" class="button button-dark  button-block icon-left ion-images">Galeri</button>
+        </div>
+        <div>
+            <img id="myImage" src="img/LBD7apK0TsaNCcMmMv4B_default-img.gif" width="100%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
+        </div>
+        <button id="aduanBaru-button8" class="button button-positive  button-block" 
+                ng-click="simpanAduan()">Hantar</button>
+    </ion-content>
+</ion-view>
